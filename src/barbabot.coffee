@@ -3,7 +3,7 @@ Adapter = require('hubot').adapter()
 
 Xmpp    = require 'node-xmpp'
 
-class Gtalkbot extends Adapter
+class Barbabot extends Adapter
   run: ->
     Xmpp.JID.prototype.from = -> @bare().toString()
 
@@ -20,7 +20,7 @@ class Gtalkbot extends Adapter
       keepaliveInterval: 15000 # ms interval to send query to gtalk server
 
     if not @options.username or not @options.password
-      throw new Error('You need to set HUBOT_GTALK_USERNAME and HUBOT_GTALK_PASSWORD anv vars for gtalk to work')
+      throw new Error('You need to set HUBOT_GTALK_USERNAME and HUBOT_GTALK_PASSWORD anv vars for barbabot to work')
 
     # Connect to gtalk servers
     @client = new Xmpp.Client
@@ -54,7 +54,7 @@ class Gtalkbot extends Adapter
 
   readStanza: (stanza) ->
     # Useful for debugging
-    # console.log stanza
+    console.log stanza
 
     # Check for erros
     if stanza.attrs.type is 'error'
