@@ -6,11 +6,11 @@
   "description": "A Barbabot adapter for hubot",
   "licenses":     [{
     "type":       "MIT",
-    "url":        "http://github.com/atmos/hubot-barbabot/raw/master/LICENSE"
+    "url":        "http://github.com/tetalab/hubot-barbabot/raw/master/LICENSE"
   }],
   "repository" : {
     "type" : "git",
-    "url" : "http://github.com/alx/hubot-barbabot.git"
+    "url" : "http://github.com/tetalab/hubot-barbabot.git"
   },
   "dependencies": {
     "node-xmpp": ">0"
