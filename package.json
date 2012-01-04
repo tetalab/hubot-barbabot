@@ -1,0 +1,19 @@
+{
+  "name":        "hubot-barbabot",
+  "version":     "1.0.0",
+  "author":      "Hubot",
+  "keywords":    "github hubot barbabot adapter",
+  "description": "A Barbabot adapter for hubot",
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        "http://github.com/atmos/hubot-barbabot/raw/master/LICENSE"
+  }],
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/alx/hubot-barbabot.git"
+  },
+  "dependencies": {
+    "node-xmpp": ">0"
+  },
+  "main": "./src/barbabot"
+}
