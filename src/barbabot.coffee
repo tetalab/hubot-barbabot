@@ -190,5 +190,5 @@ class Barbabot extends Adapter
     console.error err
 
 exports.use = (robot) ->
-  new Gtalkbot robot
+  new Barbabot robot
 
