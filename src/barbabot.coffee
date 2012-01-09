@@ -54,7 +54,7 @@ class Barbabot extends Adapter
 
   readStanza: (stanza) ->
     # Useful for debugging
-    console.log stanza
+    # console.log stanza
 
     # Check for erros
     if stanza.attrs.type is 'error'
